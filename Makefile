@@ -16,7 +16,7 @@ else
 endif
 
 nfractal : ${OBJS}
-	${CC} ${CFLAGS} -lm -lglfw ${GRAPHICS_LIBS} -o nfractal ${OBJS}
+	${CC} ${CFLAGS} -o nfractal ${OBJS} -lm -lglfw ${GRAPHICS_LIBS}
 
 .PHONY : clean
 clean :
